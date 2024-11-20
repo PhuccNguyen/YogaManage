@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <!-- CardView for main container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/white"
+            android:baselineAligned="false"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Upload Yoga Course"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Image Upload -->
+                <ImageView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/lavender_border"
+                    android:contentDescription="Upload Yoga Course Image"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/export" />
+
+                <TextView
+                    android:id="@+id/dayOfWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="center_vertical|start"
+                    android:hint="Select Day(s) of the Week"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Select day(s) of the week" />
+
+
+                <!-- Time Picker -->
+                <TextView
+                    android:id="@+id/timeOfCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:contentDescription="Select time for the course"
+                    android:gravity="center_vertical|start"
+                    android:hint="Select Time"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Capacity -->
+                <EditText
+                    android:id="@+id/capacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Enter Capacity"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Duration -->
+                <EditText
+                    android:id="@+id/duration"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Enter Duration (minutes)"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Price -->
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Enter Price"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Type -->
+                <EditText
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Enter Type (e.g., Hatha, Vinyasa)"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Description -->
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/lavender_border"
+                    android:gravity="top|start"
+                    android:hint="Enter Description"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:textColor="@color/lavender"
+                    android:textColorHint="@color/lavender" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/saveYogaCourseButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/lavender"
+                    android:contentDescription="Save yoga course details"
+                    android:elevation="4dp"
+                    android:text="Save Yoga Course"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

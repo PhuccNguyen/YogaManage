@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.YogaManage" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary and Secondary Colors -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/gray</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background Colors -->
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:statusBarColor">@color/lavender</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <!-- Text Appearance -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+
+        <!-- Button Styles -->
+        <item name="buttonStyle">@style/Widget.YogaManage.Button</item>
+
+        <!-- CardView Styles -->
+        <item name="cardViewStyle">@style/Widget.YogaManage.CardView</item>
+    </style>
+
+    <!-- Application Theme -->
+    <style name="Theme.YogaManage" parent="Base.Theme.YogaManage" />
+
+    <!-- Rounded ImageView Style -->
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Rounded ImageView Style -->
+    <style name="roundedImageViewRoundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">9%</item>
+    </style>
+
+    <!-- Rounded ImageView Style -->
+    <style name="roundedImageViewRoundedDetail">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4%</item>
+    </style>
+
+    <!-- Rounded ImageView Style -->
+    <style name="roundedImageViewRoundedImageLogout">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15%</item>
+    </style>
+    <!-- Rounded ImageView Style -->
+    <style name="roundedImageViewRoundedImageButton">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <!-- Button Style -->
+    <style name="Widget.YogaManage.Button" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/lavender</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Widget.YogaManage.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+
+
+</resources>

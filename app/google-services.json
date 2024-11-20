@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "197913793595",
+    "project_id": "yogaapp-6bef4",
+    "storage_bucket": "yogaapp-6bef4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197913793595:android:46f711146c27c2787c381e",
+        "android_client_info": {
+          "package_name": "fx.facex.yogaadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuA1v9jhgVom-cft2YrRkKmanu5kdz38w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197913793595:android:48eed11ef49aa9d67c381e",
+        "android_client_info": {
+          "package_name": "fx.facex.yogamanage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuA1v9jhgVom-cft2YrRkKmanu5kdz38w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

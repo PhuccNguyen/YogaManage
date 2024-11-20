@@ -1,0 +1,43 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lavender">#8692F7</color>
+    <color name="gold">#FFD700</color> <!-- Gold color -->
+    <color name="highlight">#FFDF00</color> <!-- Bright Gold -->
+
+    <!-- Grayscale -->
+    <color name="lightGray">#F5F5F5</color> <!-- For background -->
+    <color name="gray">#808080</color> <!-- Neutral text -->
+    <color name="mediumGray">#B0B0B0</color> <!-- Subtle accents -->
+    <color name="darkGray">#404040</color> <!-- Darker text -->
+
+    <!-- Friendly Palette -->
+    <color name="softGreen">#E9F8E7</color> <!-- Light green for backgrounds -->
+    <color name="mediumGreen">#66BB6A</color> <!-- Medium green for headings -->
+    <color name="darkGreen">#2E7D32</color> <!-- Dark green for accents -->
+
+
+    <color name="softCream">#FFF8E1</color> <!-- Cream for background -->
+    <color name="softBeige">#FAF3E0</color> <!-- Beige for card background -->
+
+
+    <!-- Accent Colors -->
+    <color name="softBlue">#E8F0FE</color> <!-- Light blue for backgrounds -->
+    <color name="mediumBlue">#4285F4</color> <!-- Medium blue for headings -->
+    <color name="darkBlue">#003366</color> <!-- Dark blue for accents -->
+    <color name="purple">#6A0DAD</color> <!-- Purple for details -->
+    <color name="softPurple">#D1C4E9</color> <!-- Light purple for subtle highlights -->
+    <color name="darkOrange">#FF7043</color> <!-- Orange for buttons and highlights -->
+    <color name="softOrange">#FFCCBC</color> <!-- Light orange for subtle highlights -->
+
+    <!-- Additional Colors -->
+    <color name="softPink">#FFE4E1</color> <!-- Light pink for gentle backgrounds -->
+    <color name="mediumPink">#F06292</color> <!-- Medium pink for highlights -->
+    <color name="darkPink">#AD1457</color> <!-- Dark pink for emphasis -->
+    <color name="teal">#008080</color> <!-- Teal for cool accents -->
+    <color name="lightYellow">#FFF9C4</color> <!-- Light yellow for warm backgrounds -->
+    <color name="mediumYellow">#FFEB3B</color> <!-- Medium yellow for highlights -->
+    <color name="brightRed">#FF5252</color> <!-- Vibrant red for warnings -->
+    <color name="lightCyan">#E0FFFF</color> <!-- Cyan for fresh backgrounds -->
+</resources>

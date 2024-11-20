@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Yoga Manage</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="login_now">You have a account? Login Now</string>
+    <string name="register_now">You do not have a account? Register Now  </string>
+    <string name="logout">Logout</string>
+    <string name="loading">loading</string>
+    <string name="location">Location</string>
+    <string name="phone">Numberphone</string>
+    <string name="full_name">Fullname</string>
+    <string name="course_image">contentDescription</string>
+</resources>
