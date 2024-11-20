@@ -1,10 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/detailCard"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    android:layout_height="wrap_content"
+    tools:context=".DetailActivity"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="@color/softBeige">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Main Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/softCream">
+
+        <!-- Image Section -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/detailImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/export"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRoundedDetail" />
+
+        <!-- Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="8dp">
+
+            <!-- Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hatha Yoga"
+                android:textSize="14sp"
+                android:textColor="@color/mediumGreen" />
+
+            <!-- Day and Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Day and Time:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailDayAndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday, 14:00"
+                android:textSize="14sp"
+                android:textColor="@color/mediumGreen" />
+
+            <!-- Capacity -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Capacity:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10/20"
+                android:textSize="14sp"
+                android:textColor="@color/mediumGreen" />
+
+            <!-- Duration -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Duration:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60 mins"
+                android:textSize="14sp"
+                android:textColor="@color/mediumGreen" />
+
+            <!-- Teacher -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Teacher:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="14sp"
+                android:textColor="@color/mediumGreen" />
+
+            <!-- Price -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Price:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$15.00"
+                android:textSize="14sp"
+                android:textColor="@color/darkGreen" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray" />
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relaxing beginner yoga class to improve flexibility and strength."
+                android:textSize="14sp"
+                android:textColor="@color/darkGray"
+                android:lineSpacingExtra="4dp" />
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:id="@+id/detailButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/detailJoinButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Join Class"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mediumGreen" />
+
+            <Button
+                android:id="@+id/detailCommentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="Comments"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mediumGreen" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

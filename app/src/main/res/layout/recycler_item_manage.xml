@@ -15,18 +15,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="12dp"
-        android:background="@color/softBlue">
+        android:background="@color/softBlue"
+        android:gravity="center_vertical">
 
-        <!-- Image Section -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/recImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginEnd="12dp"
             android:scaleType="centerCrop"
-            android:contentDescription="@string/course_image"
-            app:shapeAppearanceOverlay="@style/roundedImageViewRoundedImage" />
-
+            android:contentDescription="Course Image"
+            app:strokeColor="@color/darkBlue"
+            app:strokeWidth="2dp"
+            />
         <!-- Content Section -->
         <LinearLayout
             android:layout_width="0dp"
@@ -41,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Type: Hatha Yoga"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textColor="@color/darkBlue"
                 android:textStyle="bold" />
 
@@ -64,41 +65,35 @@
                 android:text="Capacity: 10/20"
                 android:textSize="14sp"
                 android:textColor="@color/mediumGray" />
-        </LinearLayout>
-
-        <!-- Price and Button Section -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:paddingStart="8dp">
 
             <!-- Price -->
             <TextView
                 android:id="@+id/recPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Price: $15.00"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/darkPink"
-                android:gravity="end" />
-
-            <!-- View Details Button -->
-            <Button
-                android:id="@+id/recViewDetailButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="4dp"
-                android:text="Details"
-                android:textSize="12sp"
+                android:text="Price: $15.00"
+                android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/mediumBlue" />
+                android:textColor="@color/darkPink" />
+        </LinearLayout>
+
+        <!-- Menu Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp">
+
+            <!-- Three-Dot Menu -->
+            <ImageView
+                android:id="@+id/recMenu"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_more_vert"
+                android:contentDescription="Menu"
+                />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

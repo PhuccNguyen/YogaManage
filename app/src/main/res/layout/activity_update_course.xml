@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvUpdateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Course"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:textColor="@color/darkBlue" />
+
+        <!-- Input for Course Type -->
+        <EditText
+            android:id="@+id/edtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Type"
+            android:inputType="text"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Input for Day of Week -->
+        <EditText
+            android:id="@+id/edtDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Day of Week"
+            android:inputType="text"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input for Capacity -->
+        <EditText
+            android:id="@+id/edtCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Capacity"
+            android:inputType="number"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input for Duration -->
+        <EditText
+            android:id="@+id/edtDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (hours)"
+            android:inputType="number"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input for Price -->
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price ($)"
+            android:inputType="numberDecimal"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input for Description -->
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Course"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkBlue"
+            android:padding="12dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+</ScrollView>
