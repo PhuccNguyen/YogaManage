@@ -18,13 +18,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="12dp"
-        android:background="@color/softCream">
+        android:background="@color/white">
 
         <!-- Image Section -->
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/detailImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_gravity="center_horizontal"
             android:scaleType="centerCrop"
             android:src="@drawable/export"
@@ -191,7 +191,7 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/mediumGreen" />
+                android:backgroundTint="@color/mediumBlue" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

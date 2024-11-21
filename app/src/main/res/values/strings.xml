@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Yoga Manage</string>
+    <string name="app_name">Your Life</string>
     <string name="login">Login</string>
     <string name="email">email</string>
     <string name="password">password</string>
@@ -12,4 +12,9 @@
     <string name="phone">Numberphone</string>
     <string name="full_name">Fullname</string>
     <string name="course_image">contentDescription</string>
+    <string name="register_prompt">You do not have a account? Register Now </string>
+    <string name="login_button">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="login_title">Login</string>
 </resources>
