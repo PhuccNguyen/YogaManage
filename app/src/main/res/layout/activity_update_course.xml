@@ -100,6 +100,32 @@
             android:textSize="16sp"
             android:layout_marginTop="12dp" />
 
+        <!-- Input for Location -->
+        <EditText
+            android:id="@+id/edtLocations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Input for Level -->
+        <EditText
+            android:id="@+id/edtLevels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Level"
+            android:inputType="text"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp" />
+
         <!-- Update Button -->
         <Button
             android:id="@+id/btnUpdate"

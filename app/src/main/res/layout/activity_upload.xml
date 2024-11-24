@@ -1,30 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/scrollViewUpload"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UploadActivity"
     android:background="@color/white"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".UploadActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="6dp">
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-        <!-- CardView for main container -->
+        <!-- CardView Container -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="@color/white"
-            android:baselineAligned="false"
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp">
 
@@ -32,44 +29,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="5dp">
+                android:padding="16dp">
 
                 <!-- Title -->
                 <TextView
+                    android:id="@+id/textTitleUpload"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:text="Upload Yoga Course"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
 
                 <!-- Image Upload -->
                 <ImageView
                     android:id="@+id/uploadImage"
                     android:layout_width="match_parent"
-                    android:layout_height="160dp"
+                    android:layout_height="180dp"
                     android:layout_marginBottom="16dp"
-                    android:background="@drawable/lavender_border"
-                    android:contentDescription="Upload Yoga Course Image"
                     android:scaleType="centerInside"
-                    android:src="@drawable/export" />
+                    android:src="@drawable/export"
+                    android:contentDescription="Upload Yoga Course Image"
+                    android:background="@drawable/border_dashed"
+                    android:padding="16dp" />
 
+                <!-- Day Picker -->
                 <TextView
                     android:id="@+id/dayOfWeek"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:gravity="center_vertical|start"
-                    android:hint="Select Day(s) of the Week"
                     android:paddingStart="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender"
+                    android:text="Select Day(s) of the Week"
+                    android:textColor="@color/darkBlue"
+                    android:hint="Select Day(s)"
+                    android:textColorHint="@color/darkBlue"
                     android:clickable="true"
-                    android:focusable="true"
-                    android:contentDescription="Select day(s) of the week" />
-
+                    android:focusable="true" />
 
                 <!-- Time Picker -->
                 <TextView
@@ -77,13 +77,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
-                    android:contentDescription="Select time for the course"
+                    android:background="@drawable/border_solid"
                     android:gravity="center_vertical|start"
-                    android:hint="Select Time"
                     android:paddingStart="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:text="Select Time"
+                    android:textColor="@color/darkBlue"
+                    android:hint="Select Time"
+                    android:textColorHint="@color/lavender"
+                    android:clickable="true"
+                    android:focusable="true" />
 
                 <!-- Capacity -->
                 <EditText
@@ -91,12 +93,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:hint="Enter Capacity"
                     android:inputType="number"
-                    android:padding="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:paddingStart="12dp"
+                    android:textColor="@color/darkGray"
+                    android:textColorHint="@color/darkBlue" />
 
                 <!-- Duration -->
                 <EditText
@@ -104,12 +106,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:hint="Enter Duration (minutes)"
                     android:inputType="number"
-                    android:padding="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:paddingStart="12dp"
+                    android:textColor="@color/darkGray"
+                    android:textColorHint="@color/darkBlue" />
 
                 <!-- Price -->
                 <EditText
@@ -117,12 +119,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:hint="Enter Price"
                     android:inputType="numberDecimal"
-                    android:padding="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:paddingStart="12dp"
+                    android:textColor="@color/darkGray"
+                    android:textColorHint="@color/darkBlue" />
 
                 <!-- Type -->
                 <EditText
@@ -130,39 +132,38 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:hint="Enter Type (e.g., Hatha, Vinyasa)"
                     android:inputType="text"
-                    android:padding="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:paddingStart="12dp"
+                    android:textColor="@color/darkGray"
+                    android:textColorHint="@color/darkBlue" />
 
                 <!-- Description -->
                 <EditText
                     android:id="@+id/description"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="120dp"
                     android:layout_marginBottom="16dp"
-                    android:background="@drawable/lavender_border"
+                    android:background="@drawable/border_solid"
                     android:gravity="top|start"
                     android:hint="Enter Description"
                     android:inputType="textMultiLine"
-                    android:padding="12dp"
-                    android:textColor="@color/lavender"
-                    android:textColorHint="@color/lavender" />
+                    android:paddingStart="12dp"
+                    android:textColor="@color/darkGray"
+                    android:textColorHint="@color/darkBlue" />
 
                 <!-- Save Button -->
                 <Button
                     android:id="@+id/saveYogaCourseButton"
                     android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:backgroundTint="@color/lavender"
-                    android:contentDescription="Save yoga course details"
-                    android:elevation="4dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/mediumBlue"
                     android:text="Save Yoga Course"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:elevation="4dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

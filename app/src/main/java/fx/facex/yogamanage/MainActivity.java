@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 filterList(newText);
                 return true;
             }
+
         });
 
 

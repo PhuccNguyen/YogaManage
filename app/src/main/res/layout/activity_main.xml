@@ -49,7 +49,7 @@
         android:layout_margin="10dp"
         android:background="@drawable/search_bar_background"
         app:iconifiedByDefault="false"
-        app:queryHint="Search yoga classes..."
+        app:queryHint="Search Class Name or Teacher..."
         app:searchHintIcon="@drawable/baseline_search_24"
         app:closeIcon="@drawable/baseline_clear_24"
         android:paddingHorizontal="12dp"

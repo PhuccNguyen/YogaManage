@@ -94,11 +94,12 @@ public class ProfileActivity extends AppCompatActivity {
 //        editProfileButton.setOnClickListener(view -> navigateToEditProfile());
 
 
-        
-        editProfileButton.setOnClickListener(view -> {
 
-            showMessage("View Comments clicked");
+        editProfileButton.setOnClickListener(view -> {
+            Intent intent = new Intent(ProfileActivity.this, EditProfileActivity.class);
+            startActivity(intent);
         });
+
 
 
         // Home Button Logic

@@ -139,6 +139,10 @@ public class DataCourse implements Parcelable {
         return dataImage;
     }
 
+    public String CourseId() {
+        return id;
+    }
+
     public HashMap<String, Boolean> getParticipants() {
         return participants;
     }

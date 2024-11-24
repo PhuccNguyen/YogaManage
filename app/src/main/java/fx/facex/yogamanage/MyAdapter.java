@@ -77,6 +77,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
             Intent detailIntent = new Intent(context, DetailActivity.class);
 
             // Pass data to DetailActivity
+            detailIntent.putExtra("courseId", currentCourse.getId()); // Add courseId
             detailIntent.putExtra("dataImage", currentCourse.getDataImage());
             detailIntent.putExtra("type", currentCourse.getType());
             detailIntent.putExtra("dayOfWeek", currentCourse.getDayOfWeek());

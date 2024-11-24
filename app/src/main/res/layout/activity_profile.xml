@@ -7,14 +7,19 @@
     android:background="@color/white">
 
   <!-- Profile Header with Background Image -->
+
+  <!-- Profile Image Container -->
   <RelativeLayout
       android:id="@+id/profileHeader"
       android:layout_width="match_parent"
       android:layout_height="250dp"
-      android:background="@drawable/background_image"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="0dp"
+      android:layout_marginEnd="0dp"
+      android:background="@drawable/yogabg"
       android:elevation="4dp" />
 
-  <!-- Profile Image Container -->
   <RelativeLayout
       android:id="@+id/profileImageContainer"
       android:layout_width="140dp"
@@ -30,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
         android:src="@drawable/user"
         android:contentDescription="Profile Picture" />
 
@@ -41,7 +47,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="8dp"
-        android:background="@drawable/circle_background"
         android:src="@drawable/ic_camera"
         android:contentDescription="Edit Profile Picture" />
   </RelativeLayout>
@@ -121,7 +126,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="1dp"
         android:backgroundTint="@color/mediumBlue"
         android:textColor="@android:color/white"
         android:text="Edit Profile"
@@ -133,8 +138,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_marginStart="8dp"
         android:text="Manage Yoga"
+        android:layout_marginStart="1dp"
         android:backgroundTint="@color/mediumBlue"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
@@ -149,7 +154,7 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_below="@id/buttonRow"
-      android:layout_marginTop="20dp"
+      android:layout_marginTop="7dp"
       android:layout_marginHorizontal="16dp"
       android:backgroundTint="@color/mediumBlue"
       android:textColor="@android:color/white"
